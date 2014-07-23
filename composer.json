@@ -1,0 +1,21 @@
+{
+    "name": "cruddy/sentry",
+    "description": "",
+    "authors": [
+        {
+            "name": "Alexander Kalnoy",
+            "email": "lazychaser@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4.1",
+        "cartalyst/sentry": "~2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Cruddy\\Sentry": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
