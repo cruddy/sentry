@@ -13,17 +13,12 @@ class SentryServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		
-	}
-
-	public function boot()
-	{
 		$this->app->resolving('cruddy.permissions', function ($manager)
 		{
-		    $manager->extend('sentry', function ($app)
-		    {
-		        return new SentryPermissions($app['sentry']);
-		    });
+			$manager->extend('sentry', function ($app)
+			{
+				return new SentryPermissions($app['sentry']);
+			});
 		});
 	}
 
